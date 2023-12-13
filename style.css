@@ -71,22 +71,36 @@ body {
 body{
   display: flex;
   flex-direction: column;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .main{
   flex-grow: 1;
 }
 
+
 /*Hero (1st paragraph)*/
-.hero{
-  margin-top: 100px;
-  margin-bottom: 100px;
+h1{
+font-size: 3rem;
 }
+
+.h-text{
+color: gray;
+}
+
+.hero{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
 
 /*Skills (2nd para)*/
 .skills{
-  margin-bottom: 50px;
-  border: solid;
+  margin-bottom: 7rem;
 }
 
 .skill-list{
@@ -94,11 +108,15 @@ body{
   list-style-type: none;
   gap: 0.5rem;
   grid-template-columns:repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .skill-list > li{
-  border: solid;
+  border-radius: 10px;
   padding: 5px;
+  text-align: left;
+  vertical-align: bottom;
+  font-weight: bold;
 }
 
 .skill-list .i1{
@@ -106,6 +124,8 @@ body{
   grid-row-end: 8;
   grid-column-start: 1;
   grid-column-end: 3;
+
+  background-color: #cdb4db;
 }
 
 .skill-list .i2{
@@ -113,6 +133,8 @@ grid-row-start: 1;
 grid-row-end: 5;
 grid-column-start: 3;
 grid-column-end: 4;
+
+background-color: #ffafcc;
 }
 
 .skill-list .i3{
@@ -120,6 +142,8 @@ grid-row-start: 1;
 grid-row-end: 5;
 grid-column-start: 4;
 grid-column-end: 5;
+
+background-color: #ffc8dd;
 }
 
 .skill-list .i4{
@@ -127,6 +151,8 @@ grid-row-start: 1;
 grid-row-end: 2;
 grid-column-start: 5;
 grid-column-end: 7;
+
+background-color: #bde0fe;
 }
 
 .skill-list .i5{
@@ -134,6 +160,8 @@ grid-row-start: 5;
 grid-row-end: 8;
 grid-column-start: 3;
 grid-column-end: 5;
+
+background-color: #a2d2ff;
 }
 
 .skill-list .i6{
@@ -141,16 +169,20 @@ grid-row-start: 2;
 grid-row-end: 8;
 grid-column-start: 5;
 grid-column-end: 7;
+
+background-color: #bba1ca;
 }
-
-
-
 
 
 /*About Me 3rd(para)*/
 .abtMe{
-  margin-bottom: 50px;
+  margin-bottom: 7rem;
   display: flex;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mButton{
@@ -160,6 +192,7 @@ grid-column-end: 7;
   border: none;
   padding: 10px 25px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .amy{
@@ -170,14 +203,21 @@ grid-column-end: 7;
   margin-right: 10px;
 }
 
-.text{
+.abt-text{
   justify-content: center;
   align-self: center;  
 }
 
+
 /*My Work (4th para)*/
 .mWork{
-  margin-bottom: 50px;
+  margin-bottom: 7rem;
+}
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .screenshots{
@@ -186,6 +226,11 @@ grid-column-end: 7;
   grid-template-columns: 1fr 1fr;
 }
 
+.s1, .s2, .s3, .s4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .scr1, .scr2, .scr3, .scr4{
   border: solid;
@@ -203,39 +248,44 @@ grid-column-end: 7;
 .cat1, .cat2, .cat3{
   background-color: pink;
   font-size: 10px;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 5px 7px;
   margin-right: 5px;
+  font-weight: bold;
 }
 
-h5{
-  text-align: center;
-  font-size: 2rem;
+.tutorial-num{
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
-
-
-
-
-
 
 
 /*Contact*/
 .contact{
   background-color:#cdb4db ;
   border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 50px;
+  padding: 20px 30px;
+  margin-bottom: 7rem;
+
+  display: flex;
+  flex-direction: column;
 }
+
+h4{
+  font-size: 2rem;
+  }
 
 .cButton{
   background-color: black;
   color: white;
+  border: none;
+  font-weight: bold;
+
   border-radius: 0.9rem;
   padding: 10px 25px;
-  border: none;
+  width: 140px;
+  margin-top: 10px;
 }
-
-
 
 
 /*Footer*/
@@ -261,12 +311,16 @@ h5{
 .header{
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: solid gray;
+  padding-top: 20px;
+  margin-bottom: 10px;
 }
-
+.f-text{
+  color: gray;
+}
