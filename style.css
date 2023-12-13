@@ -79,8 +79,8 @@ body{
 
 /*Hero (1st paragraph)*/
 .hero{
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /*Skills (2nd para)*/
@@ -93,6 +93,7 @@ body{
   display: grid;
   list-style-type: none;
   gap: 0.5rem;
+  grid-template-columns:repeat(6, 1fr);
 }
 
 .skill-list > li{
@@ -100,15 +101,80 @@ body{
   padding: 5px;
 }
 
+.skill-list .i1{
+  grid-row-start: 1;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.skill-list .i2{
+grid-row-start: 1;
+grid-row-end: 5;
+grid-column-start: 3;
+grid-column-end: 4;
+}
+
+.skill-list .i3{
+grid-row-start: 1;
+grid-row-end: 5;
+grid-column-start: 4;
+grid-column-end: 5;
+}
+
+.skill-list .i4{
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 5;
+grid-column-end: 7;
+}
+
+.skill-list .i5{
+grid-row-start: 5;
+grid-row-end: 8;
+grid-column-start: 3;
+grid-column-end: 5;
+}
+
+.skill-list .i6{
+grid-row-start: 2;
+grid-row-end: 8;
+grid-column-start: 5;
+grid-column-end: 7;
+}
 
 
 
 
 
+/*About Me 3rd(para)*/
+.abtMe{
+  margin-bottom: 50px;
+  display: flex;
+}
 
+.mButton{
+  background-color: pink;
+  color: black;
+  border-radius: 0.9rem;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
 
+.amy{
+  height: 450px;
+  width: 370px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-right: 10px;
+}
 
-
+.text{
+  justify-content: center;
+  align-self: center;
+  
+}
 
 
 
@@ -126,6 +192,7 @@ body{
   color: white;
   border-radius: 0.9rem;
   padding: 10px 25px;
+  border: none;
 }
 
 
@@ -144,6 +211,7 @@ body{
   color: white;
   border-radius: 1.3rem;
   padding: 5px 25px;
+  border: none;
 }
 
 .flogo{
