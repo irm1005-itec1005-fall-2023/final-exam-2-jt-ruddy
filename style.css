@@ -172,9 +172,34 @@ grid-column-end: 7;
 
 .text{
   justify-content: center;
-  align-self: center;
-  
+  align-self: center;  
 }
+
+/*My Work (4th para)*/
+.mWork{
+  margin-bottom: 50px;
+}
+
+.screenshots{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scr1, .scr2, .scr3, .scr4{
+  border: solid;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 300px;
+  height: 400px;
+}
+
+
+
+
+
+
+
 
 
 
