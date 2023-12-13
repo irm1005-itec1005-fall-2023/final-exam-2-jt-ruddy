@@ -194,6 +194,9 @@ h2{
   margin-top: 20px;
   font-weight: bold;
   font-size: 1rem;
+
+  transition: background-color 0.5s;
+  transition: color 0.5s;
 }
 
 .amy{
@@ -286,6 +289,9 @@ h4{
   padding: 10px 25px;
   width: 140px;
   margin-top: 10px;
+
+  transition: background-color 0.2s;
+  transition: color 0.2s;
 }
 
 
@@ -303,6 +309,9 @@ h4{
   border-radius: 1.3rem;
   padding: 5px 25px;
   border: none;
+
+  transition: background-color 0.2s;
+  transition: color 0.2s;
 }
 
 .flogo{
@@ -325,6 +334,21 @@ h4{
 
 .f-text{
   color: gray;
+}
+
+.hButton:hover{
+  background-color: white;
+  color: black;
+}
+
+.cButton:hover{
+  background-color: white;
+  color: black;
+}
+
+.mButton:hover{
+  background-color: rgb(185, 130, 139);
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
