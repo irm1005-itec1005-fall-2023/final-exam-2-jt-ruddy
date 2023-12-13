@@ -67,3 +67,98 @@ body {
 /*
  * ADD YOUR STYLES HERE
  */
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+/*Hero (1st paragraph)*/
+.hero{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/*Skills (2nd para)*/
+.skills{
+  margin-bottom: 50px;
+  border: solid;
+}
+
+.skill-list{
+  display: grid;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.skill-list > li{
+  border: solid;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact*/
+.contact{
+  background-color:#cdb4db ;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.cButton{
+  background-color: black;
+  color: white;
+  border-radius: 0.9rem;
+  padding: 10px 25px;
+}
+
+
+
+
+/*Footer*/
+.hlogo{
+  height: 50px;
+  border-radius: 0.8rem;
+  background-color: black;
+  padding: 10px 10px;
+}
+
+.hButton{
+  background-color: black;
+  color: white;
+  border-radius: 1.3rem;
+  padding: 5px 25px;
+}
+
+.flogo{
+  height: 50px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
